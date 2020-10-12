@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>js入门</title>
+        <script type="text/javascript">
+            document.write("<h1>hello world</h1>");
+            function strlen(str){
+                var len=0;
+                var i;
+                for(i=0;i<str.length;i++){
+                    if(str.charCodeAt(i)>255) len+=2;
+                    else len++;
+
+                }
+                return len;
+            }
+            var str="js编程语言";
+            document.write(str);
+            document.write("<p>"+"字符长度"+strlen(str)+"</p>");
+            var 我="张三";
+            document.write(我);
+            //变量
+            //表达式
+            //数据类型
+        </script>
+        <button onclick="number_btn()"></button>
+        <script type="text/javascript">
+        function number_btn(){
+            //将数值类型转换为字符类型
+            var number1=100;
+            var number2=number1.toString();
+            alert(typeof(number2));
+        }
+        
+        </script>
+        <p>
+            <script type="text/javascript">
+                //使用数值类型和字符将数值类型转换为字符类型
+                var number_a=2;
+                var number_b=number_a+"";
+                document.write(number_b+"类型："+typeof(number_b));
+            </script>
+        </p>
+        <p>
+            
+            <script type="text/javascript">
+            //将字符类型转换为数值类型
+                var str_a="12";
+                var str_b=parseInt(str_a);
+                document.write(str_b+"类型"+typeof(str_b));
+            </script>
+        </p>
+        <p>
+            <input type="button" onclick="bool_exchange()"/>
+            <script type="text/javascript">
+            function bool_exchange(){
+                //bool类型转换
+                var number_c=3;
+                var number_d=!!c;
+                alert(number_d);
+                alert(typeof(number_d));}
+            </script>
+        </p>
+        <p>
+            <script type="text/javascript">
+                //函数
+                function write_message(){
+                    return "hello this world";
+                }
+                document.write(write_message());
+            </script>
+        </p>
+        <p>
+            <script>
+                function func(a,b){
+                    return a+b;
+                }
+                document.write(func(1)+"此时打印出nan非数"+"<br />")
+                document.write(func(2,1,3)+"此时运行正常，多余的实参会默认无效"+"<br />")
+            </script>
+
+        </p>
+    </head>
+    <body>  
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title>dom基础</title>
+        <link rel="stylesheet" href="dom基础.css">
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>123</li>
+            </ul>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            
+        </div>
+        <script type="text/javascript">
+                var a=document.getElementsByTagName("div")[1];
+                document.write("div节点"+a.ownerDocument);
+                // function count(n){
+                //     var num=0;
+                //     if(n.nodeType==0){
+                //         num++;
+                //     }
+                //     var son=n.childNodes;
+                //     for(var i=0;i<son.length;i++){
+                //         num+=count(son[i]);
+                //     }
+                //     return num;
+                // }
+                // document.write("<div>"+"包含元素："+count(document)+"</div>");
+                
+                document.write(a.parentNode);
+                document.write(a.childNodes);
+                document.write(a.children);
+                
+            </script>
+    </body>
+</html>

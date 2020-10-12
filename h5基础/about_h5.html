@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>h5语法</title>
+
+    </head>
+    <body>
+        <div>
+            <header>
+                <nav><a href="#">链接</a></nav>
+            </header>
+            <aside>侧栏</aside>
+            <section>内容分区</section>
+            <article>这是一篇文章</article>
+            <footer>脚注栏</footer>
+            <meter>表示特定范围的值</meter>
+            <time>20:22</time>
+            <video>一条视频</video>
+            <audio>一条音频</audio>
+            
+        </div>
+        <hr>根据父容器设定宽度
+        <p>
+            通常strong 标签代替b标签加粗，em代替i斜体
+        </p>
+        <p>a标签target属性，定义链接文档在何处显示，_blank表示新窗口</p>
+        <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">菜鸟</a>
+        <p>base标签描述基本链接地址，即所有标签的默认链接地址，和a标签用法一致</p>
+        <p>meta标签定义搜索关键字name="keyword",描述内容name="description"，作者author，多少秒刷新页面http-equiv="refresh"，content="30"，30秒</p>
+        <p>表格</p>
+        <table border="1">
+            <tr>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td colspan="2">21</td>
+            </tr>
+        </table>
+        <p>列表：有序ol无序ul，自定义列表dl,dt,dd</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <dl>
+            <dt>
+                列表项111
+                <dd>描述first</dd>
+            </dt>
+        </dl>
+        <p>
+            区块元素div常用于整体块布局，span常用于文本
+        </p>
+        <p>布局常用div和table</p>
+        <p>noscript标签是浏览器不支持脚本时显示的内容</p>
+        <p>在网页中需要使用大于小于符号、空格等需要使用字符实体，如&nbsp</p>
+        <p><strong>h5新标签新特性</strong></p>
+        <p>旧浏览器对于不认识的新标签会当做行内元素</p>
+        <p>用于绘画的 canvas 元素
+            用于媒介回放的 video 和 audio 元素
+            对本地离线存储的更好的支持
+            新的特殊内容元素，比如 article、footer、header、nav、section
+            新的表单控件，比如 calendar、date、time、email、url、search</p>
+        <p>
+            canvas使用js脚本进行画图，svg矢量图使用xml画图
+        </p>
+        <p>拖放元素：drag/drop</p>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+        您的浏览器不支持Video标签。
+        </video>
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          您的浏览器不支持 audio 元素。
+          </audio>
+          <input list="browsers">
+ 
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<p>localStorage用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。 和 sessionStorage :用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。在使用 web 存储前,应检查浏览器是否支持 localStorage 和sessionStorage:if(typeof(Storage)!=="undefined")</p>
+    </body>
+</html>
